@@ -2,8 +2,8 @@
 <ruleset name="WordPress Coding Standards">
 	<arg name="extensions" value="php" />
 
-	<file>../wp-content/plugins/my-theme/</file>
-    <file>../wp-content/plugins/my-plugin/</file>
+	<file>../wp-content/themes/my-theme/</file>
+	<file>../wp-content/plugins/my-plugin/</file>
 
 	<rule ref="WordPress" />
 

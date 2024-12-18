@@ -24,6 +24,9 @@
 		"lint": "npm-run-all2 lint:*",
 		"lint:workspaces": "npm run lint --workspaces --if-present",
 		"lint:phpcs": "wp-env run cli composer lint",
+		"format": "npm-run-all2 format:*",
+		"format:workspaces": "npm run format --workspaces --if-present",
+		"format:phpcbf": "wp-env run cli composer format",
 		"test": "npm-run-all2 test:*",
 		"test:workspaces": "npm run test --workspaces --if-present",
 		"test:phpunit": "wp-env run tests-cli composer test"

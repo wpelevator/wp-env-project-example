@@ -1,0 +1,20 @@
+<phpunit
+	bootstrap="phpunit-bootstrap.php"
+	backupGlobals="false"
+	colors="true"
+	convertErrorsToExceptions="true"
+	convertNoticesToExceptions="true"
+	convertWarningsToExceptions="true"
+>
+	<testsuites>
+		<testsuite name="project">
+			<directory suffix="-test.php">./phpunit</directory>
+		</testsuite>
+		<testsuite name="my-plugin">
+			<directory suffix="-test.php">../wp-content/plugins/my-plugin/tests/phpunit</directory>
+		</testsuite>
+		<testsuite name="my-theme">
+			<directory suffix="-test.php">../wp-content/themes/my-theme/tests/phpunit</directory>
+		</testsuite>
+	</testsuites>
+</phpunit>

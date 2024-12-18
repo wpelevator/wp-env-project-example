@@ -1,8 +1,8 @@
 {
 	"private": true,
 	"workspaces": [
-		"public/wp-content/plugins/my-plugin",
-		"public/wp-content/themes/my-theme"
+		"wp-content/plugins/my-plugin",
+		"wp-content/themes/my-theme"
 	],
 	"dependencies": {
 		"@wordpress/env": "^10.14.0"
@@ -23,6 +23,6 @@
 		"build:workspaces": "npm run build --workspaces",
 		"test": "npm-run-all2 test:*",
 		"test:workspaces": "npm run test --workspaces",
-		"test:project": "npm run cli -- composer test"
+		"test:project": "wp-env run tests-cli --env-cwd=tests ../wp-content/vendor/bin/phpunit"
 	}
 }

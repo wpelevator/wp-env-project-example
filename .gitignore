@@ -1,8 +1,8 @@
-/vendor/
 /node_modules/
 
 # Added via Composer.
 /wordpress/
+/wp-content/vendor/
 
 /wp-content/uploads/
 

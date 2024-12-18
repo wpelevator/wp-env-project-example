@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f1b55a04d21b9b2752f28d78d7b560d4",
+    "content-hash": "615176c8aabadf42bf83808649059622",
     "packages": [
         {
             "name": "composer/installers",
@@ -157,7 +157,7 @@
             "version": "dev-main",
             "dist": {
                 "type": "path",
-                "url": "public/wp-content/plugins/my-plugin"
+                "url": "wp-content/plugins/my-plugin"
             },
             "require": {
                 "composer/installers": "^1.0||^2.0"
@@ -177,7 +177,7 @@
             "version": "dev-main",
             "dist": {
                 "type": "path",
-                "url": "public/wp-content/themes/my-theme"
+                "url": "wp-content/themes/my-theme"
             },
             "require": {
                 "composer/installers": "^1.0||^2.0"

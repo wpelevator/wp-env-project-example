@@ -29,6 +29,7 @@
 	"minimum-stability": "dev",
 	"prefer-stable": true,
 	"config": {
+		"vendor-dir": "wp-content/vendor",
 		"sort-packages": true,
 		"allow-plugins": {
 			"dealerdirect/phpcodesniffer-composer-installer": true,
@@ -49,8 +50,8 @@
 	},
 	"require-dev": {
 		"wp-phpunit/wp-phpunit": "^6.7",
-		"yoast/phpunit-polyfills": "^3.0",
-		"wpackagist-plugin/query-monitor": "^3.17"
+		"wpackagist-plugin/query-monitor": "^3.17",
+		"yoast/phpunit-polyfills": "^3.0"
 	},
 	"require": {
 		"roots/wordpress-core-installer": "^1.0",
@@ -58,10 +59,5 @@
 		"wpackagist-theme/twentytwentyfive": "^1.0",
 		"my-vendor/my-plugin": "*",
 		"my-vendor/my-theme": "*"
-	},
-	"scripts": {
-		"test": [
-			"phpunit"
-		]
 	}
 }

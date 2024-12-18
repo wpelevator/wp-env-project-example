@@ -5,7 +5,7 @@
  * Use the WP testing library bundled with wp-env.
  */
 
-require_once dirname( __DIR__ ) . '/vendor/autoload.php';
+require_once dirname( __DIR__ ) . '/wp-content/vendor/autoload.php';
 
 $wp_tests_dir = getenv( 'WP_PHPUNIT__DIR' ); // Configured by wp-phpunit/wp-phpunit.
 
@@ -16,7 +16,7 @@ if ( empty( $wp_tests_dir ) || ! is_dir( $wp_tests_dir ) ) {
 // Load the wp-tests-config.php from wp-env since it knows about the database.
 $wp_env_tests_dir = getenv( 'WP_TESTS_DIR' );
 
-if ( $wp_env_tests_dir ) {
+if ( is_readable( $wp_env_tests_dir . '/wp-tests-config.php' ) ) {
 	putenv( sprintf( 'WP_PHPUNIT__TESTS_CONFIG=%s/wp-tests-config.php', $wp_env_tests_dir ) );
 }
 
@@ -26,12 +26,12 @@ $plugin_files = array_map(
 		$contents = file_get_contents( $plugin_file );
 
 		if ( false !== stripos( $contents, 'Plugin Name: ' ) ) {
-			return sprintf( '%s/%s', dirname( $plugin_file ), basename( $plugin_file ) );
+			return sprintf( '%s/%s', basename( dirname( $plugin_file ) ), basename( $plugin_file ) );
 		}
 
 		return null;
 	},
-	glob( __DIR__ . '/public/wp-content/plugins/*.php', GLOB_ONLYDIR )
+	glob( dirname( __DIR__ ) . '/wp-content/plugins/*/*.php' )
 );
 
 global $wp_tests_options; // WP testing library uses this to define option values.

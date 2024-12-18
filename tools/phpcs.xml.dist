@@ -5,7 +5,8 @@
 	<file>../wp-content/themes/my-theme/</file>
 	<file>../wp-content/plugins/my-plugin/</file>
 
-	<rule ref="WordPress" />
+	<rule ref="WordPress-Core" />
+	<rule ref="WordPress-Extra" />
 
 	<exclude-pattern>/node_modules/</exclude-pattern>
 	<exclude-pattern>/wp-content/vendor/</exclude-pattern>

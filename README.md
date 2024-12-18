@@ -100,4 +100,4 @@ Visit the URL displayed at the end of the `start` command above.
 ## Credits
 
 - Created by [Kaspars Dambis](https://kaspars.net).
-- Licensed under the [MIT License](LICENSE.md).
+- Licensed under the [MIT License](LICENSE).

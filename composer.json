@@ -2,6 +2,7 @@
 	"$schema": "https://raw.githubusercontent.com/composer/composer/refs/heads/2.2/res/composer-schema.json",
 	"name": "wpelevator/wp-env-example",
 	"type": "project",
+	"license": "MIT",
 	"repositories": [
 		{
 			"type": "composer",

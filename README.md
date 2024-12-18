@@ -14,6 +14,50 @@ This might seem verbose but the benefits are clear the first time any changes to
 
 - Enable Xdebug for easy debugging and performance evalutation.
 
+## Project Structure
+
+    ├── composer.json
+    ├── composer.lock
+    ├── package-lock.json
+    ├── package.json
+    ├── tools
+    │   ├── phpcs.xml.dist
+    │   ├── phpunit
+    │   │   └── class-project-test.php
+    │   ├── phpunit-bootstrap.php
+    │   └── phpunit.xml.dist
+    ├── wordpress (mapped to /var/www/html inside wp-env via .wp-env.json)
+    │   ├── composer.json (mapped via .wp-env.json from project root)
+    │   ├── composer.lock (mapped via .wp-env.json from project root)
+    │   ├── ...
+    │   ├── tools (mapped via .wp-env.json from project root)
+    │   ├── ...
+    │   ├── wp-config.php (created by wp-env)
+    │   ├── ...
+    └── wp-content (mapped via .wp-env.json from project root)
+        ├── plugins
+        │   ├── my-plugin (tracked in the repository)
+        │   │   ├── composer.json
+        │   │   ├── my-plugin.php
+        │   │   ├── package.json
+        │   │   ├── php
+        │   │   └── tests
+        │   └── query-monitor (any plugins added via Composer)
+        │       ├── ...
+        ├── themes
+        │   ├── my-theme (tracked in the repository)
+        │   │   ├── composer.json
+        │   │   ├── functions.php
+        │   │   ├── package.json
+        │   │   ├── php
+        │   │   ├── style.css
+        │   │   ├── tests
+        │   │   └── theme.json
+        │   └── twentytwentyfive (any themes added via Composer)
+        │       ├── ...
+        └── uploads
+            └── ...
+
 ## Requirements
 
 Most of these are shared with the `@wordpress/env` package.

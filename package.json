@@ -7,6 +7,9 @@
 	"dependencies": {
 		"@wordpress/env": "^10.14.0"
 	},
+	"devDependencies": {
+		"npm-run-all2": "^7.0.2"
+	},
 	"scripts": {
 		"start": "wp-env start --xdebug",
 		"stop": "wp-env stop",
@@ -14,6 +17,12 @@
 		"logs": "wp-env logs",
 		"env": "wp-env",
 		"cli": "wp-env run cli",
-		"composer": "wp-env run cli composer"
+		"shell": "wp-env run cli bash",
+		"wp": "wp-env run cli wp",
+		"build": "npm-run-all2 build:*",
+		"build:workspaces": "npm run build --workspaces",
+		"test": "npm-run-all2 test:*",
+		"test:workspaces": "npm run test --workspaces",
+		"test:project": "npm run cli -- composer test"
 	}
 }

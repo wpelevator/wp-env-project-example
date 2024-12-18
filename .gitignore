@@ -2,16 +2,14 @@
 /node_modules/
 
 # Added via Composer.
-/public/wordpress/
+/wordpress/
 
-/public/wp-content/uploads/
+/wp-content/uploads/
 
 # Exclude everything by default as tracked by Composer.
-/public/wp-content/plugins/*
-/public/wp-content/themes/*
+/wp-content/plugins/*
+/wp-content/themes/*
 
-# Do track our custom project plugins.
-!/public/wp-content/plugins/my-plugin/
-
-# Do track our custom project themes.
-!/public/wp-content/themes/my-theme/
+# Do track our custom assets.
+!/wp-content/plugins/my-plugin/
+!/wp-content/themes/my-theme/

@@ -1,6 +1,0 @@
-{
-	"private": true,
-	"devDependencies": {
-		"@wordpress/scripts": "^30.7.0"
-	}
-}

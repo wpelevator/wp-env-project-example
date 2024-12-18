@@ -1,0 +1,7 @@
+{
+	"private": true,
+	"devDependencies": {
+		"@wordpress/scripts": "^30.7.0",
+		"npm-run-all2": "^7.0.2"
+	}
+}

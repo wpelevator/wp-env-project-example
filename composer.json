@@ -13,14 +13,14 @@
 		},
 		{
 			"type": "path",
-			"url": "public/wp-content/plugins/my-plugin",
+			"url": "wp-content/plugins/my-plugin",
 			"options": {
 				"reference": "none"
 			}
 		},
 		{
 			"type": "path",
-			"url": "public/wp-content/themes/my-theme",
+			"url": "wp-content/themes/my-theme",
 			"options": {
 				"reference": "none"
 			}
@@ -29,6 +29,7 @@
 	"minimum-stability": "dev",
 	"prefer-stable": true,
 	"config": {
+		"sort-packages": true,
 		"allow-plugins": {
 			"dealerdirect/phpcodesniffer-composer-installer": true,
 			"roots/wordpress-core-installer": true,
@@ -36,12 +37,12 @@
 		}
 	},
 	"extra": {
-		"wordpress-install-dir": "public/wordpress",
+		"wordpress-install-dir": "wordpress",
 		"installer-paths": {
-			"public/wp-content/plugins/{$name}": [
+			"wp-content/plugins/{$name}": [
 				"type:wordpress-plugin"
 			],
-			"public/wp-content/themes/{$name}": [
+			"wp-content/themes/{$name}": [
 				"type:wordpress-theme"
 			]
 		}
@@ -57,5 +58,10 @@
 		"wpackagist-theme/twentytwentyfive": "^1.0",
 		"my-vendor/my-plugin": "*",
 		"my-vendor/my-theme": "*"
+	},
+	"scripts": {
+		"test": [
+			"phpunit"
+		]
 	}
 }

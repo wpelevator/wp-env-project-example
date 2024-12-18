@@ -49,6 +49,7 @@
 		}
 	},
 	"require-dev": {
+		"wp-coding-standards/wpcs": "^3.1",
 		"wp-phpunit/wp-phpunit": "^6.7",
 		"wpackagist-plugin/query-monitor": "^3.17",
 		"yoast/phpunit-polyfills": "^3.0"
@@ -62,7 +63,13 @@
 	},
 	"scripts": {
 		"test": [
-			"phpunit --configuration=tests/phpunit.xml.dist"
+			"phpunit --configuration=tools/phpunit.xml.dist"
+		],
+		"lint": [
+			"phpcs --standard=tools/phpcs.xml.dist"
+		],
+		"format": [
+			"phpcbf --standard=tools/phpcs.xml.dist"
 		]
 	}
 }

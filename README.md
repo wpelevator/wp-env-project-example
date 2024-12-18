@@ -23,12 +23,12 @@ The [`.wp-env.json` config](.wp-env.json) maps the project directories inside th
     ├── package-lock.json
     ├── package.json
     ├── ...
-    ├── tools
-    │   ├── phpcs.xml.dist
-    │   ├── phpunit
+    ├── tools (mapped via .wp-env.json from project root)
+    │   ├── phpcs.xml.dist (project-wide phpcs configuration)
+    │   ├── phpunit (project-wide PHPUnit tests)
     │   │   └── class-project-test.php
     │   ├── phpunit-bootstrap.php
-    │   └── phpunit.xml.dist
+    │   └── phpunit.xml.dist (project-wide PHPUnit configuration)
     ├── wordpress (mapped to /var/www/html inside wp-env via .wp-env.json)
     │   ├── composer.json (mapped via .wp-env.json from project root)
     │   ├── composer.lock (mapped via .wp-env.json from project root)

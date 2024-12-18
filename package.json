@@ -8,6 +8,7 @@
 		"@wordpress/env": "^10.14.0"
 	},
 	"devDependencies": {
+		"@wordpress/scripts": "^30.7.0",
 		"npm-run-all2": "^7.0.2"
 	},
 	"scripts": {
@@ -25,6 +26,8 @@
 		"lint": "npm-run-all2 lint:*",
 		"lint:workspaces": "npm run lint --workspaces --if-present",
 		"lint:phpcs": "wp-env run cli composer lint",
+		"lint:docs": "wp-scripts lint-md-docs",
+		"lint:package-json": "wp-scripts lint-pkg-json",
 		"format": "npm-run-all2 format:*",
 		"format:workspaces": "npm run format --workspaces --if-present",
 		"format:phpcbf": "wp-env run cli composer format",

@@ -59,5 +59,10 @@
 		"wpackagist-theme/twentytwentyfive": "^1.0",
 		"my-vendor/my-plugin": "*",
 		"my-vendor/my-theme": "*"
+	},
+	"scripts": {
+		"test": [
+			"phpunit --configuration=tests/phpunit.xml.dist"
+		]
 	}
 }

@@ -8,7 +8,12 @@
 
 # Exclude everything by default as tracked by Composer.
 /wp-content/plugins/*
+/wp-content/plugins/*/composer.lock
+/wp-content/plugins/*/package-lock.json
+
 /wp-content/themes/*
+/wp-content/themes/*/composer.lock
+/wp-content/themes/*/package-lock.json
 
 # Do track our custom assets.
 !/wp-content/plugins/my-plugin/

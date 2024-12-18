@@ -3,6 +3,8 @@
 	"core": "./wordpress",
 	"mappings": {
 		"tests": "./tests",
-		"wp-content": "./wp-content"
+		"wp-content": "./wp-content",
+		"composer.json": "./composer.json",
+		"composer.lock": "./composer.lock"
 	}
 }

@@ -9,7 +9,7 @@ class Plugin {
 	 * @var string
 	 */
 	private string $plugin_file;
-	
+
 	public function __construct( string $plugin_file ) {
 		$this->plugin_file = $plugin_file;
 	}

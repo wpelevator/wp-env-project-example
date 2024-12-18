@@ -9,7 +9,7 @@ class Theme {
 	 * @var string
 	 */
 	private string $theme_dir;
-	
+
 	public function __construct( string $theme_dir ) {
 		$this->theme_dir = $theme_dir;
 	}

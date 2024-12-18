@@ -16,10 +16,13 @@ This might seem verbose but the benefits are clear the first time any changes to
 
 ## Project Structure
 
+The [`.wp-env.json` config](.wp-env.json) maps the project directories inside the `wp-env` containers:
+
     ├── composer.json
     ├── composer.lock
     ├── package-lock.json
     ├── package.json
+    ├── ...
     ├── tools
     │   ├── phpcs.xml.dist
     │   ├── phpunit
@@ -35,6 +38,7 @@ This might seem verbose but the benefits are clear the first time any changes to
     │   ├── wp-config.php (created by wp-env)
     │   ├── ...
     └── wp-content (mapped via .wp-env.json from project root)
+        ├── vendor (created by Composer to ensure it is available inside the containers)
         ├── plugins
         │   ├── my-plugin (tracked in the repository)
         │   │   ├── composer.json

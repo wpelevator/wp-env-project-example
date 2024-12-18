@@ -31,6 +31,7 @@
 		"format": "npm-run-all2 format:*",
 		"format:workspaces": "npm run format --workspaces --if-present",
 		"format:phpcbf": "wp-env run cli composer format",
+		"format:docs": "wp-scripts lint-md-docs --fix",
 		"test": "npm-run-all2 test:*",
 		"test:workspaces": "npm run test --workspaces --if-present",
 		"test:phpunit": "wp-env run tests-cli composer test"

@@ -1,0 +1,61 @@
+{
+	"$schema": "https://raw.githubusercontent.com/composer/composer/refs/heads/2.2/res/composer-schema.json",
+	"name": "wpelevator/wp-env-example",
+	"type": "project",
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "https://wpackagist.org",
+			"only": [
+				"wpackagist-plugin/*",
+				"wpackagist-theme/*"
+			]
+		},
+		{
+			"type": "path",
+			"url": "public/wp-content/plugins/my-plugin",
+			"options": {
+				"reference": "none"
+			}
+		},
+		{
+			"type": "path",
+			"url": "public/wp-content/themes/my-theme",
+			"options": {
+				"reference": "none"
+			}
+		}
+	],
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+	"config": {
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true,
+			"roots/wordpress-core-installer": true,
+			"composer/installers": true
+		}
+	},
+	"extra": {
+		"wordpress-install-dir": "public/wordpress",
+		"installer-paths": {
+			"public/wp-content/plugins/{$name}": [
+				"type:wordpress-plugin"
+			],
+			"public/wp-content/themes/{$name}": [
+				"type:wordpress-theme"
+			]
+		}
+	},
+	"require-dev": {
+		"wp-phpunit/wp-phpunit": "^6.7",
+		"yoast/phpunit-polyfills": "^3.0",
+		"wpackagist-plugin/query-monitor": "^3.17"
+	},
+	"require": {
+		"roots/wordpress-core-installer": "^1.0",
+		"roots/wordpress-no-content": "^6.7",
+		"wpackagist-theme/twentytwentyfive": "^1.0",
+		"my-vendor/my-plugin": "*",
+		"my-vendor/my-theme": "*"
+	}
+}

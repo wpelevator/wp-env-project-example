@@ -1,0 +1,12 @@
+{
+	"name": "my-vendor/my-plugin",
+	"type": "wordpress-plugin",
+	"autoload": {
+		"classmap": [
+			"php/"
+		]
+	},
+	"require": {
+		"composer/installers": "^1.0||^2.0"
+	}
+}

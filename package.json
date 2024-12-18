@@ -1,0 +1,19 @@
+{
+	"private": true,
+	"workspaces": [
+		"public/wp-content/plugins/my-plugin",
+		"public/wp-content/themes/my-theme"
+	],
+	"dependencies": {
+		"@wordpress/env": "^10.14.0"
+	},
+	"scripts": {
+		"start": "wp-env start --xdebug",
+		"stop": "wp-env stop",
+		"stop-all": "docker stop $(docker ps -a -q)",
+		"logs": "wp-env logs",
+		"env": "wp-env",
+		"cli": "wp-env run cli",
+		"composer": "wp-env run cli composer"
+	}
+}

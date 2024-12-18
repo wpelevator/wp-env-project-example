@@ -1,0 +1,12 @@
+{
+	"name": "my-vendor/my-theme",
+	"type": "wordpress-theme",
+	"autoload": {
+		"classmap": [
+			"php/"
+		]
+	},
+	"require": {
+		"composer/installers": "^1.0||^2.0"
+	}
+}

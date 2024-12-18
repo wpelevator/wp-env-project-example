@@ -1,0 +1,17 @@
+/vendor/
+/node_modules/
+
+# Added via Composer.
+/public/wordpress/
+
+/public/wp-content/uploads/
+
+# Exclude everything by default as tracked by Composer.
+/public/wp-content/plugins/*
+/public/wp-content/themes/*
+
+# Do track our custom project plugins.
+!/public/wp-content/plugins/my-plugin/
+
+# Do track our custom project themes.
+!/public/wp-content/themes/my-theme/

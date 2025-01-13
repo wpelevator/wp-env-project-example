@@ -1,4 +1,5 @@
 /vendor/
 /node_modules/
-/package.lock
+/build/
+/package-lock.json
 /composer.lock

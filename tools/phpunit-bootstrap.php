@@ -7,18 +7,8 @@
 
 require_once dirname( __DIR__ ) . '/wp-content/vendor/autoload.php';
 
-$wp_tests_dir = getenv( 'WP_PHPUNIT__DIR' ); // Configured by wp-phpunit/wp-phpunit.
-
-if ( empty( $wp_tests_dir ) || ! is_dir( $wp_tests_dir ) ) {
-	throw new RuntimeException( 'Failed to find the WP_PHPUNIT__DIR directory.' );
-}
-
 // Load the wp-tests-config.php from wp-env since it knows about the database.
-$wp_env_tests_dir = getenv( 'WP_TESTS_DIR' );
-
-if ( is_readable( $wp_env_tests_dir . '/wp-tests-config.php' ) ) {
-	putenv( sprintf( 'WP_PHPUNIT__TESTS_CONFIG=%s/wp-tests-config.php', $wp_env_tests_dir ) );
-}
+$wp_tests_dir = getenv( 'WP_TESTS_DIR' );
 
 // Load all plugins during the tests.
 $plugin_files = array_map(

@@ -39,7 +39,6 @@
 		}
 	},
 	"extra": {
-		"wordpress-install-dir": "wordpress",
 		"installer-paths": {
 			"wp-content/plugins/{$name}": [
 				"type:wordpress-plugin"
@@ -51,21 +50,15 @@
 	},
 	"require-dev": {
 		"wp-coding-standards/wpcs": "^3.1",
-		"wp-phpunit/wp-phpunit": "^6.7",
 		"wpackagist-plugin/query-monitor": "^3.17",
-		"yoast/phpunit-polyfills": "^3.0"
+		"yoast/phpunit-polyfills": "^3.1"
 	},
 	"require": {
-		"roots/wordpress-core-installer": "^1.0",
-		"roots/wordpress-no-content": "^6.7",
 		"wpackagist-theme/twentytwentyfive": "^1.0",
 		"my-vendor/my-plugin": "*",
 		"my-vendor/my-theme": "*"
 	},
 	"scripts": {
-		"test": [
-			"phpunit --configuration=tools/phpunit.xml.dist"
-		],
 		"lint": [
 			"phpcs --standard=tools/phpcs.xml.dist"
 		],

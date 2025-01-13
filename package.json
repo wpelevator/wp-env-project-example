@@ -34,6 +34,6 @@
 		"format:docs": "wp-scripts lint-md-docs --fix",
 		"test": "npm-run-all2 test:*",
 		"test:workspaces": "npm run test --workspaces --if-present",
-		"test:phpunit": "wp-env run tests-cli composer test"
+		"test:phpunit": "wp-env run tests-cli --env-cwd=tools phpunit"
 	}
 }

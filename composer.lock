@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b8714d56d85a878b07584f854f318639",
+    "content-hash": "45c8ecf6f7b1902d4585f830e67cf914",
     "packages": [
         {
             "name": "composer/installers",
@@ -194,21 +194,21 @@
         },
         {
             "name": "roots/wordpress-core-installer",
-            "version": "2.0.0",
+            "version": "1.100.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/roots/wordpress-core-installer.git",
-                "reference": "635dd2e1f624124bbc09b70b52d3cc289aef43d6"
+                "reference": "73f8488e5178c5d54234b919f823a9095e2b1847"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/roots/wordpress-core-installer/zipball/635dd2e1f624124bbc09b70b52d3cc289aef43d6",
-                "reference": "635dd2e1f624124bbc09b70b52d3cc289aef43d6",
+                "url": "https://api.github.com/repos/roots/wordpress-core-installer/zipball/73f8488e5178c5d54234b919f823a9095e2b1847",
+                "reference": "73f8488e5178c5d54234b919f823a9095e2b1847",
                 "shasum": ""
             },
             "require": {
                 "composer-plugin-api": "^1.0 || ^2.0",
-                "php": ">=8.1"
+                "php": ">=5.6.0"
             },
             "conflict": {
                 "composer/installers": "<1.0.6"
@@ -218,7 +218,7 @@
             },
             "require-dev": {
                 "composer/composer": "^1.0 || ^2.0",
-                "phpunit/phpunit": "^9.6"
+                "phpunit/phpunit": ">=5.7.27"
             },
             "type": "composer-plugin",
             "extra": {
@@ -249,15 +249,19 @@
             ],
             "support": {
                 "issues": "https://github.com/roots/wordpress-core-installer/issues",
-                "source": "https://github.com/roots/wordpress-core-installer/tree/2.0.0"
+                "source": "https://github.com/roots/wordpress-core-installer/tree/master"
             },
             "funding": [
                 {
                     "url": "https://github.com/roots",
                     "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/rootsdev",
+                    "type": "patreon"
                 }
             ],
-            "time": "2024-12-14T16:31:47+00:00"
+            "time": "2020-08-20T00:27:30+00:00"
         },
         {
             "name": "roots/wordpress-no-content",
